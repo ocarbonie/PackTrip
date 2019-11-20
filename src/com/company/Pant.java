@@ -49,6 +49,6 @@ public class Pant {
     }
     @Override
     public String toString(){
-        return "Pant :" + this.color + " " + this.pattern + " " + this.type + " " + this.size;
+        return "Pant: " + this.color + " " + this.pattern + " " + this.type + " " + this.size;
     }
 }

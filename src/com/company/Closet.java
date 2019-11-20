@@ -8,6 +8,7 @@ public class Closet {
     private ArrayList<Pant>pants= new ArrayList<>();
     private ArrayList<Shirt>shirts = new ArrayList<>();
     private ArrayList<Footwear>shoes = new ArrayList<>();
+    private Random r = new Random();
 
     public void addJacket(){
         Jacket a = new Jacket("brown", "XL", "dotted", "down");
@@ -20,7 +21,6 @@ public class Closet {
     }
     public String getJacket(){
         int x = 0;
-        Random r = new Random();
         x = r.nextInt(3);
         return jackets.get(x).toString();
     }
@@ -36,7 +36,6 @@ public class Closet {
 
     public String getPant(){
         int x = 0;
-        Random r = new Random();
         x = r.nextInt(3);
         return pants.get(x).toString();
     }
@@ -53,7 +52,6 @@ public class Closet {
 
     public String getShirt(){
         int x = 0;
-        Random r = new Random();
         x = r.nextInt(3);
         return shirts.get(x).toString();
     }
@@ -70,7 +68,6 @@ public class Closet {
 
     public String getFootwear(){
         int x = 0;
-        Random r = new Random();
         x = r.nextInt(3);
         return shoes.get(x).toString();
     }
